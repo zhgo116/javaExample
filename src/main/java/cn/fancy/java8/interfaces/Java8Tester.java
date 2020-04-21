@@ -13,7 +13,7 @@ public class Java8Tester {
         names.add(new Car("winform", 4));
         names.add(new Car("c++", 5));
 
-        names.forEach(e -> System.out.println(e.getAge()));
+        names.forEach((Car e) -> System.out.println(e.getAge()));
 //多行代码的形式
         names.forEach(e -> {
 

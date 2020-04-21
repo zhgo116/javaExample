@@ -16,6 +16,11 @@ public class Test {
         Optional<Integer> b = Optional.of(value2);
         System.out.println(java8Tester.sum(a, b));
 
+    //如果参数1为空，就赋默认值
+        Optional.ofNullable(value1).orElse(1);
+
+
+
     }
 
     public Integer sum(Optional<Integer> a, Optional<Integer> b) {
